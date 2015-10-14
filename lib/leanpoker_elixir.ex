@@ -4,12 +4,14 @@ defmodule LeanpokerElixir do
   alias LeanpokerElixir.Dispatcher
 
   params do
-    requires :action, type: String
+    optional :action, type: String
     optional :game_state, type: String
   end
 
   match do
-    Dispatcher.dispatch(params[:action], Parser.parse!(params[:game_state]||"{}"))
+    action = params[:action]||"check"
+    game_state = Parser.parse!(params[:game_state]||"{}")
+    Dispatcher.dispatch(action, game_state)
   end
 
   rescue_from :all do
