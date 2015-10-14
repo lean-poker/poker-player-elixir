@@ -7,7 +7,7 @@ defmodule LeanpokerElixir do
     optional :game_state, type: Map
   end
 
-  post do
+  match do
     Dispatcher.dispatch(params[:action], params[:game_state])
   end
 
