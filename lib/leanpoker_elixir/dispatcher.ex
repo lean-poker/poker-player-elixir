@@ -6,7 +6,7 @@ defmodule LeanpokerElixir.Dispatcher do
       "version" -> Player.version()
       "bet_request" -> Player.bet_request(game_state)
       "showdown" -> Player.showdown(game_state)
-      _ -> action
+      _ -> ""
     end
   end
 end
