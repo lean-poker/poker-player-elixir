@@ -26,6 +26,11 @@ Leanpoker Player API for Elixir
       # A command to run right after compiling the app
       post_compile="pwd"
     ```
+3. Push to heroku
+    ```
+      git push heroku master
+    ```
+
 [buildpack github link](http://github.com/HashNuke/heroku-buildpack-elixir)
 
 ## TODO:
