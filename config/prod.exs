@@ -1,5 +1,5 @@
 use Mix.Config
-  config :maru, LeanpokerElixir, http: [port: 80]
+  config :maru, LeanpokerElixir, http: [port: {:system, "PORT"}]
 
   #config :logger, :console,
     #level: :info,
