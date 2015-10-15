@@ -2,6 +2,8 @@
 
 Leanpoker Player API for Elixir
 
+Main Player file is lib/leanpoker_elixir/player.ex
+
 ## Heroku:
 
 1. Create an app with build pack
@@ -32,8 +34,3 @@ Leanpoker Player API for Elixir
     ```
 
 [buildpack github link](http://github.com/HashNuke/heroku-buildpack-elixir)
-
-## TODO:
-
-* tests
-* abilty to use erlang
