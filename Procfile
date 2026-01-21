@@ -1,1 +1,1 @@
-web: mix phx.server
+web: PHX_SERVER=true bin/poker_player_elixir start
